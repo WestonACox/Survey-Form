@@ -32,7 +32,7 @@
     <input type="text" placeholder="Enter your age" id="number">
   </div>
   <div class="form-group">
-    <p>What did you like about Dog Gone Pretty?</p>
+    <p>What did you like about <strong>Dog Gone Pretty?</strong></p>
     <select id="dropdown" class="form-control" name="dropdown" require>
       <option disabled="" selected="" value="">Select an option</option>
       <option value="employees">The Fun Employees</option>
@@ -41,7 +41,7 @@
     </select>
   </div>
   <div class="form-group">
-    <p>Would you recommend Dog Gone Pretty to a friend?</p>
+    <p>Would you recommend <strong>Dog Gone Pretty</strong> to a friend?</p>
     <label>
       <input class="input-radio" name="recommend" value="definitely" type="radio" checked>
       Definitely 
@@ -73,10 +73,13 @@
       <input type="checkbox" class="input-checkbox" name="criteria" value="you-were-satisfied">
       You Were Satisfied
     </label>
+  <div class="form-group">
     <label for="extra-comments"> Other Comments </label>
       <textarea id="extra-comments" name="extra-comments" rows="4" columns="40">Use this space to make extra comments</textarea>
   </div>
-    <input type="submit" value="Submit">
+  <div class="form-group">
+    <button id="submit" class="submit-button" type="submit">Submit</button>
+  </div>
   </form>
 </body>
 </html>
