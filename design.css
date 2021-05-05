@@ -1,8 +1,51 @@
-body{
+html{
   font-family: Arial, Helvetica, sans-serif; 
+}
+::before,::after {
+  display: border-box;
+}
+body::before{
+  content:'';
+  position: fixed;
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yJ9aWCpV-bpfKHJn4QSFQwHaDt%26pid%3DApi&f=1");
-  background-size: cover;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  z-index: -1;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -1;
+  
+}
+.container {
+  margin: 3.125 50% 0 50%;
+  max-width: 720px;
+  width:100%;
+  position: static;
+  
+}
+form {
+  
+  padding: 2.5rem;
+  
+}
+@media (min-width:480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+@media(min-width:575px) {
+  .container {
+    min-width: 540px;
+  }
+}
+
+
+
+label {
+  
+  display: flex;
+  align-items: center;
+  margin-right:8px
 }
